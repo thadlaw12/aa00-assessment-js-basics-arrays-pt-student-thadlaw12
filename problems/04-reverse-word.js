@@ -16,7 +16,10 @@ npm test test/04-reverse-word-spec.js
 // the characters in the word and return it as a string. Use the methods
 // researched from MDN above.
 
-// Your code here 
+function reverseWord(str){
+    let revStr = str.split('').reverse().join('')
+    return revStr;
+} 
 
 // OPTIONAL CHALLENGE: Define a function called reverseWordChallenge that takes
 // in a word string. Reverse the characters in the word and return it as a

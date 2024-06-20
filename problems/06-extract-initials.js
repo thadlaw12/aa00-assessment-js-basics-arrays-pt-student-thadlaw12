@@ -12,7 +12,13 @@ npm test test/06-extract-initials-spec.js
 // Eg: If the input string is 'john smith', then the function should return a
 // string of 'JS'.
 
-// Your code here 
-
+function extractInitials(str){
+    let strArr = str.toUpperCase().split(' ')
+    let firstInit = ''
+    for(let i = 0; i < strArr.length; i++){
+        let initals = strArr[i][0];
+        firstInit += initals
+    } return firstInit;
+}
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = extractInitials;

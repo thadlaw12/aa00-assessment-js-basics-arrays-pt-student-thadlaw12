@@ -10,7 +10,11 @@ npm test test/05-sword-case-spec.js
 // lowercased with the spaces replaced with a 'dash'. This is sword-cased naming
 // convention commonly used as your project file names (e.g., 05-sword-case.js).
 
-// Your code here 
+function swordCase(str){
+    let strLower = str.toLowerCase()
+    let swordCased = strLower.split(' ').join('-')
+    return swordCased;
+}
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = swordCase;

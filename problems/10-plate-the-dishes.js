@@ -19,8 +19,15 @@ npm test test/10-plate-the-dishes-spec.js
 // If there are more string values in the second array than there are null
 // values in the first array, do NOT add them to the end of the first
 // array.
-
-// Your code here 
+function plateTheDishes(arr1, arr2){
+    for(let i = 0; i < arr1.length; i++){
+        if(i > arr2.length){
+            arr1[i] = arr1[i]
+        }else if(arr1[i] === null){
+            arr1[i] = arr2[0]
+        }
+    } return arr1;
+} 
 
 // console.log(plateTheDishes([null, 'burger', null], ['salad'])); //=> ['salad', 'burger', null]
 

@@ -25,15 +25,14 @@ function fizzBuzzArr(range) {
   for (let i = 0; i <= range.length; i++) {
     let num = range[i];
     if (num % 3 === 0 && num % 5 === 0) {
-      arr[i] = "Fizzbuzz";
+      range[i] = "Fizzbuzz";
     } else if (num % 3 === 0) {
-      range[num] = "fizz";
-    } if (num % 5 === 0) {
-      range[i] = "Buzzer";
+      range[i] = "Fizz";
+    } else if (num % 5 === 0) {
+      range[i] = "Buzz";
     }
-    range[i] = i;
   }
-  return arr;
+  return range;
 }
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
